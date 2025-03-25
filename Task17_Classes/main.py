@@ -1,25 +1,20 @@
-# PascalCase (for the class names), camelCase (not used in python), snake_case (for all the other things)
-# Word "pass" can be used to do not add anything inside a function and do not get an error
-class User:
-    # initialize the attributes. It will execute prior to start the code.
-    def __init__(self, user_id, username):
-        self.id = user_id
-        self.username = username
-        self.followers = 0
-        self.following = 0
+from question_model import Question
+from data import question_data
+from quiz_brain import QuizBrain
 
-    # Add to the followers of the user that it is being followed
-    def follow(self, user):
-        user.followers += 1
-        self.following += 1
+question_bank = []
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question["answer"]
+    new_question = Question(question_text, question_answer)
+    question_bank.append(new_question)
 
-user_1 = User("001", "anna")
-user_2 = User("002", "jack")
-print(user_1.username)
-print(user_1.followers)
+quiz = QuizBrain(question_bank)
 
-user_1.follow(user_2)
-print(user_1.following)
-print(user_1.followers)
-print(user_2.following)
-print(user_2.followers)
+while quiz.still_has_questions():
+    quiz.next_question()
+
+print("You have completed the quiz")
+print(f"Your final score was: {quiz.score}/{quiz.question_number}")
+
+
