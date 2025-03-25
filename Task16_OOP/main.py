@@ -1,14 +1,15 @@
 # OOP - Object Oriented Programming
 # Goal: Coffee Machine with OOP
 
-from machine_database import machine_resources
-from machine_database import coffee_type
+from machine_database import MachineResources
+from machine_database import CoffeType
 # Coffee Machine
 
 import ext_programs
 ########################################################################################
 
-
+machine_resources = MachineResources()
+coffee_type = CoffeType()
 print("Welcome to the coffee machine ☕☕☕")
 machine_on = True
 

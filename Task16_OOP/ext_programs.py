@@ -1,4 +1,3 @@
-
 # Function in charge to print the resources in the machine
 def print_report(machine_resources):
     print("The current machine resources are as follows:")

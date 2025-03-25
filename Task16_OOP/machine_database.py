@@ -1,10 +1,10 @@
-machine_resources = {
+MachineResources = {
     "water": 100,
     "milk": 200,
     "coffee": 300,
     "money": 0
 }
-coffee_type = {
+CoffeType = {
     "espresso": {
         "water": 25,
         "milk": 0,
