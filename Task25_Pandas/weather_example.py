@@ -29,7 +29,7 @@ for weather in data:
 
 # Save data in a csv file
 data_dict = {
-    "students": ["Amy", "James", "Angela"]
+    "students": ["Amy", "James", "Angela"],
     "scores": [115, 32, 22]
 }
 data = pandas.DataFrame(data_dict)

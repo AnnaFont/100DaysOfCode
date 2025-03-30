@@ -1,6 +1,6 @@
 import pandas
 
-data = pandas.read.csv("central_park_squirrel.csv")
+data = pandas.read_csv("central_park_squirrel.csv")
 
 colors_dict = {
     "color": [],
