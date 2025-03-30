@@ -37,7 +37,7 @@ while game_is_on:
         ball.bounce_y()
 
     # Collision with the paddle
-    if ball.distance(r_paddle) < 30 and ball.xcor() > SCREEN_SIZE_X-40 or ball.distance(l_paddle) < 30 \
+    if ball.distance(r_paddle) < 40 and ball.xcor() > SCREEN_SIZE_X-40 or ball.distance(l_paddle) < 40 \
             and ball.xcor() < -SCREEN_SIZE_X+40:
         ball.bounce_x()
 
