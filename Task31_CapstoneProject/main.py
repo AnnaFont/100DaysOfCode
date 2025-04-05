@@ -18,7 +18,6 @@ else:
     words_dict = data.to_dict(orient="records")
 
 
-
 def next_card():
     # Change to a global to be used in other functions
     global current_card, flip_timer
