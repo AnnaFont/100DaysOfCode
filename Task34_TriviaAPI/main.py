@@ -1,6 +1,6 @@
 from question_model import Question
 from quiz_brain import QuizBrain
-#import requests
+import requests
 from ui import QuizInterface
 
 parameters = {
@@ -30,7 +30,7 @@ for question in question_data:
 
 
 quiz = QuizBrain(question_bank)
-quiz_ui = QuizInterface()
+quiz_ui = QuizInterface(quiz)
 
 # It cannot have two main loops. Tk main loop will be used, other is commented
 # while quiz.still_has_questions():

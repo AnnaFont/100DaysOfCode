@@ -23,10 +23,11 @@ class QuizBrain:
 
     def check_answer(self, user_answer):
         correct_answer = self.current_question.answer
+        print(f"Your current score is: {self.score}/{self.question_number}")
+        print("\n")
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
             return True
         else:
             return False
-        print(f"Your current score is: {self.score}/{self.question_number}")
-        print("\n")
+
