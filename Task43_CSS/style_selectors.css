@@ -1,0 +1,30 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+p{
+   color: red;
+}
+.note{
+  font-size: 20px;
+} 
+/* Id Selectors must be unique */
+#id-selector-demo{
+    color: green
+}
+/* All that has value will be blue
+li[value]{
+  color: blue;
+}
+*/
+li[value="4"]{
+  color: blue; 
+}
+/* To select all the elements use *
+*/
+*{
+  text-align: center;
+}
