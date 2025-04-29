@@ -82,6 +82,8 @@ class InstaFollower:
                 print("Could not click button, skipping...")
                 #cancel_button = self.driver.find_element(by=By.XPATH, value="//button[contains(text(), 'Cancel')]")
                 #cancel_button.click()
+                #ok_button = self.driver.find_element(by=By.XPATH, value="//button[contains(text(), 'Ok')]")
+                #ok_button.click()
                 continue
 
 
