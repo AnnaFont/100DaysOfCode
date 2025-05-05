@@ -1,0 +1,1 @@
+# Jinja helps to create a general layout that will apply to all the pages
